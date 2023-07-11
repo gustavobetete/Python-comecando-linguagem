@@ -1,5 +1,5 @@
 print("********************************")
-print("Bem vindo ao jogo de adivinhação")
+print("Bem vindo ao jogo de Adivinhação")
 print("********************************")
 
 numero_secreto = 43
@@ -14,8 +14,8 @@ while rodada <= total_tentativa:
     chute = int(chute_str)
 
     acertou = chute == numero_secreto
-    maior = chute > numero_secreto
-    menor = chute < numero_secreto
+    maior =   chute > numero_secreto
+    menor =   chute < numero_secreto
 
     if acertou:
         print("Voce acertou!!!")
