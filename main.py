@@ -4,12 +4,12 @@ print("********************************")
 
 numero_secreto = 43
 total_tentativa = 3
+rodada = 1
 
 while total_tentativa != 0:
+    print("Tentativa",  rodada,  "de ", total_tentativa)
     chute_str = input("Digite o seu numero: ")
-
     print("Voce digitou ", chute_str)
-
     chute = int(chute_str)
 
     acertou = chute == numero_secreto
@@ -24,5 +24,10 @@ while total_tentativa != 0:
             print("Voce errou! O seu chute foi MAIOR que o numero secreto")
         elif menor:
             print("Voce errou! O seu chute foi MENOR que o numero secreto")
+
+    rodada = rodada + 1
+    if rodada > 3:
+        print("Numero de tentativas excedidas...")
+        break
 
 print("Fim do jogo")
