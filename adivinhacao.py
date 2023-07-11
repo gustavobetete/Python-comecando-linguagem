@@ -1,10 +1,11 @@
 # Utilizando o mesmo jogo do main.py porem agora com for
+import random
 
 print("********************************")
 print("Bem vindo ao jogo de adivinhação")
 print("********************************")
 
-numero_secreto = 43
+numero_secreto = random.randrange(100)
 total_tentativa = 3
 rodada = 1
 
@@ -31,4 +32,4 @@ for rodada in range(1, total_tentativa + 1):
         elif menor:
             print("Voce errou! O seu chute foi MENOR que o numero secreto")
 
-print("Fim do jogo")
+print("Fim do jogo! Numero secreto: ", numero_secreto)
