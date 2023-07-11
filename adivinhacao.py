@@ -5,7 +5,7 @@ print("********************************")
 print("Bem vindo ao jogo de adivinhação")
 print("********************************")
 
-numero_secreto = random.randrange(100)
+numero_secreto = random.randrange(1, 101)
 total_tentativa = 3
 rodada = 1
 
